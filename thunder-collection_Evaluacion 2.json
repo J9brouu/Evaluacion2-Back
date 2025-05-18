@@ -1,0 +1,186 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Evaluacion 2",
+    "collectionId": "63f47883-042f-448a-8e45-7b97fcaa3de8",
+    "dateExported": "2025-05-18T04:32:06.020Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "859ca659-0deb-401c-a91f-422000ec9b84",
+            "name": "CRUD",
+            "containerId": "",
+            "created": "2025-05-18T03:42:40.325Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "100624f6-7573-448e-aa83-c367f59384c4",
+            "name": "RECLUTADOR",
+            "containerId": "",
+            "created": "2025-05-18T03:42:57.757Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "db75c872-6418-4a39-a06c-2b0c606a4cf2",
+            "colId": "63f47883-042f-448a-8e45-7b97fcaa3de8",
+            "containerId": "859ca659-0deb-401c-a91f-422000ec9b84",
+            "name": "Crear Usuario",
+            "url": "localhost:3001/api/usuarios/create",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-05-18T03:44:52.485Z",
+            "modified": "2025-05-18T04:24:31.109Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Camila\",\n  \"apellido\":\"Meyer\",\n  \"email\":\"camila.meyer.z@gmail.com\",\n  \"contraseña\":\"blabla13\",\n  \"fecha_nacimiento\":\"1995-08-31\",\n  \"telefono\":\"912345678\",\n  \"direccion\":\"blabla 123, bla\",\n  \"rol\":1\n}\n\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "e9b7a226-37db-4217-ba0f-a1dbccfd1cea",
+            "colId": "63f47883-042f-448a-8e45-7b97fcaa3de8",
+            "containerId": "859ca659-0deb-401c-a91f-422000ec9b84",
+            "name": "Obtener usuarios",
+            "url": "localhost:3001/api/usuarios/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-05-18T03:52:17.245Z",
+            "modified": "2025-05-18T03:52:34.935Z",
+            "headers": []
+        },
+        {
+            "_id": "c04e0d42-5060-476b-9191-df997ad71d9e",
+            "colId": "63f47883-042f-448a-8e45-7b97fcaa3de8",
+            "containerId": "859ca659-0deb-401c-a91f-422000ec9b84",
+            "name": "Actualizar usuario",
+            "url": "localhost:3001/api/usuarios/update",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2025-05-18T03:53:22.604Z",
+            "modified": "2025-05-18T04:30:35.666Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 3,\n  \"nombre\": \"Jonathan\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "68777a20-75ab-4346-a0f0-85d2440e4b96",
+            "colId": "63f47883-042f-448a-8e45-7b97fcaa3de8",
+            "containerId": "859ca659-0deb-401c-a91f-422000ec9b84",
+            "name": "Eliminar Usuario",
+            "url": "localhost:3001/api/usuarios/remove",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2025-05-18T03:57:26.295Z",
+            "modified": "2025-05-18T04:30:38.666Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 3\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a150bb74-6f48-4313-b96b-19af0694681b",
+            "colId": "63f47883-042f-448a-8e45-7b97fcaa3de8",
+            "containerId": "100624f6-7573-448e-aa83-c367f59384c4",
+            "name": "Crear Oferta",
+            "url": "localhost:3001/api/ofertasLaboral/crearOfertaReclutador",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2025-05-18T04:01:50.756Z",
+            "modified": "2025-05-18T04:11:33.919Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"camila.meyer.z@gmail.com\",\n  \"contraseña\":\"blabla13\",\n  \"titulo\":\"Desarrollo Backend\",\n  \"descripcion\":\"Lorem ipsum ejemplo de descripcion\",\n  \"ubicacion\":\"Santiago\",\n  \"salario\":\"1000000\",\n  \"tipo_contrato\":1,\n  \"fecha_publicacion\":\"2025/05/18\", \n  \"fecha_cierre\":\"2025/06/18\", \n  \"estado\":1\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "59845148-9daa-4cec-9d70-a4e179d6d612",
+            "colId": "63f47883-042f-448a-8e45-7b97fcaa3de8",
+            "containerId": "100624f6-7573-448e-aa83-c367f59384c4",
+            "name": "Editar Oferta",
+            "url": "localhost:3001/api/ofertasLaboral/updateOfertaLaboral",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2025-05-18T04:12:02.412Z",
+            "modified": "2025-05-18T04:15:19.900Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"id\": 3,\r\n  \"email\": \"camila.meyer.z@gmail.com\",\r\n  \"contraseña\": \"blabla13\",\r\n  \"titulo\": \"Desarrollo FrontEnd\",\r\n  \"descripcion\": \"Descripción actualizada\",\r\n  \"salario\": 1500000\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "560af8f5-cd62-447c-8c01-007669ef5113",
+            "colId": "63f47883-042f-448a-8e45-7b97fcaa3de8",
+            "containerId": "100624f6-7573-448e-aa83-c367f59384c4",
+            "name": "Desactivar Oferta",
+            "url": "localhost:3001/api/ofertasLaboral/updateOfertaLaboral",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2025-05-18T04:17:02.577Z",
+            "modified": "2025-05-18T04:17:41.731Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": 3,\n  \"email\": \"camila.meyer.z@gmail.com\",\n  \"contraseña\": \"blabla13\",\n  \"estado\": 3\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "15b6eec7-3279-4b32-86a1-35232b9ff193",
+            "colId": "63f47883-042f-448a-8e45-7b97fcaa3de8",
+            "containerId": "100624f6-7573-448e-aa83-c367f59384c4",
+            "name": "Crear Postulante",
+            "url": "localhost:3001/api/postulaciones/create",
+            "method": "POST",
+            "sortNum": 95000,
+            "created": "2025-05-18T04:19:37.221Z",
+            "modified": "2025-05-18T04:27:16.697Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"candidato_id\": 6, \n\"oferta_laboral_id\":3, \n\"estado_postulacion\":1, \n\"comentario\":\"Postulacion creada\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "4dcdbe1a-1bd1-4dbf-b832-d5104b5421ef",
+            "colId": "63f47883-042f-448a-8e45-7b97fcaa3de8",
+            "containerId": "100624f6-7573-448e-aa83-c367f59384c4",
+            "name": "Ver postulante",
+            "url": "localhost:3001/api/postulaciones/userPostulation",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2025-05-18T04:18:26.971Z",
+            "modified": "2025-05-18T04:27:53.623Z",
+            "headers": []
+        },
+        {
+            "_id": "68e72b31-4a9b-4698-af59-5602ec0d50ac",
+            "colId": "63f47883-042f-448a-8e45-7b97fcaa3de8",
+            "containerId": "100624f6-7573-448e-aa83-c367f59384c4",
+            "name": "Actualizar estado-comentario",
+            "url": "localhost:3001/api/postulaciones/estado-comentario",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2025-05-18T04:28:41.451Z",
+            "modified": "2025-05-18T04:30:09.873Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"candidato_id\": 6,\r\n  \"oferta_laboral_id\": 3,\r\n  \"estado_postulacion\": 2,\r\n  \"comentario\": \"Revisando Postulacion\"\r\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "uvKcA8fcnEXfAJrj6tBGimNLIFVPqlg0XZRL8Z8i8tIPQ3BuCYZYrq_LC4heRnWVdx1YmwcEMs_ynOA2k7exjw"
+}
