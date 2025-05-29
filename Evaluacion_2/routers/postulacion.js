@@ -5,6 +5,13 @@ const postulacionController = require('../controllers/postulacionController');
 
 // rutas para la API de usuarios
 
+/**
+ * @swagger
+ * tags:
+ *   name: Postulaciones
+ *   description: API para gestionar postulaciones
+ */
+
 router.get('/', (req, res, next) => {
    postulacionController.getAll(req, res);
 

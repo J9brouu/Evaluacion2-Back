@@ -2,11 +2,18 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 
+// SWAGGER
+const swaggerUi = require('swagger-ui-express');
+const swaggerSpec = require('./swagger');
+
 // Cargar las varibles de entorno del archivo .env
 
 dotenv.config();
 
 const app = express();
+
+// integracion con swagger
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use(express.json());
 app.use(bodyParser.json());
 

@@ -4,6 +4,13 @@ const ancetecentesLaboralController = require('../controllers/ancetecentesLabora
 
 // rutas para la API de usuarios
 
+/**
+ * @swagger
+ * tags:
+ *   name: Antecedentes Laborales
+ *   description: API para gestionar antecedentes laborales
+ */
+
 router.get('/', (req, res, next) => {
    ancetecentesLaboralController.getAll(req, res);
 }

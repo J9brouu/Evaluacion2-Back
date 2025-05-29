@@ -5,6 +5,13 @@ const ofertaLaboralController = require('../controllers/ofertaLaboralController'
 
 // rutas para la API de usuarios
 
+/**
+ * @swagger
+ * tags:
+ *   name: Ofertas Laboral
+ *   description: API para gestionar ofertas laborales
+ */
+
 router.get('/', (req, res, next) => {
    ofertaLaboralController.getAll(req, res);
 });

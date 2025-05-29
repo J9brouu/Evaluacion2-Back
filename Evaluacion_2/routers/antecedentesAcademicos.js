@@ -5,6 +5,13 @@ const antecedentesAcademicosController = require('../controllers/antecedentesAca
 
 // rutas para la API de usuarios
 
+/**
+ * @swagger
+ * tags:
+ *   name: Antecedentes Academicos
+ *   description: API para gestionar antecedentes academicos
+ */
+
 router.get('/', (req, res, next) => {
    antecedentesAcademicosController.getAll(req, res);
 
